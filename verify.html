@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="CSS/styles.css">
+
+        <title>Verification page</title>
+    </head>
+    <body class="veriBody">
+        <header class="position-sticky sticky-top  head">
+            <div class="container ">
+                <div class="row row-header">
+                    <h3 class="col-12">Verify OTP</h3>
+                </div>
+            </div>
+        </header>
+        <div class="container ">
+            <div class="row">
+                <img class="col-sm-2 col-4 img-fluid mx-auto d-block img1" src="css/chkCircle.png" alt="Mark">
+            </div>
+            <div class="row">
+                <img class="col-sm-1 col-3 img-fluid mx-auto d-block img2" src="css/asterisk.png" alt="Attendance">
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="container">
+            <form id="verify-form">
+                <div class="form-group row">
+                    <label for="otp" class="offset-md-3 col-md-3 col-form-label lbl-otp">ENTER OTP</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control otpinput" id="otp" name="otp" autocomplete="off" required/>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row justify-content-center">
+                    <button type="submit" class="btn btn-lg btnTick" id="check">
+                        <i><span class="fa fa-check"></span></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <footer>
+
+        </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#verify-form").submit(function(){
+                var x = document.getElementById("otp").value;
+                alert("Your attendance have been marked OTP: "+x);
+                window.close();
+                return false;
+            });
+        });
+    </script>
+
+    </body>
+</html>

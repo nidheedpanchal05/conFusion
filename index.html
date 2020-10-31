@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <title>Login page</title>
+    
+</head>
+<body class="body-style">
+    <header>
+    </header>
+    <div id="loginModal" class="modal fade col-md-8 offset-md-2" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header modal-header">
+                    <h2>LOG IN</h2>
+                    <button class="close text-white" data-dismiss="modal" type="reset">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <br>
+                    <form id="loginForm">
+                        <div class="form-group row">
+                            <label for="username" class="sr-only col-form-label">User Name</label>
+                            <div class="offset-sm-3 col-sm-6 ">
+                                <input type="text" id="username" name="username" class="form-control" placeholder="User Name" autocomplete="off" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="pwd" class="sr-only col-form-label">Password</label>
+                            <div class=" offset-sm-3 col-sm-6">
+                                <input type="password" id="pwd" name="pwd" class="form-control" placeholder="Password" autocomplete="off" required/>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <div class="offset-sm-3 col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-4 ml-auto">
+                                        <button id="submitLogin" class="btn btn-md btn-success" type="submit">
+                                            SUBMIT
+                                        </button>
+                                    </div>
+                                    &nbsp; &nbsp;
+                                    <div class="col-xs-4 mr-auto">
+                                        <button id="loginCancel" class="btn btn-md btn-danger" type="reset" >CANCEL</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <hr>
+                    <div class="para">
+                        <p>Not registered ? <a data-dismiss="modal" data-toggle="modal" href="#signModal">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="signModal" class="modal fade col-md-8 offset-md-2" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header modal-header">
+                    <h2>SIGN UP</h2>
+                    <button class="close text-white" data-dismiss="modal" type="reset">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <br>
+                    <form>
+                        <div class="form-group row">
+                            <div class="offset-sm-1 col-sm-3 ">
+                                <label for="usernamesu" class=" col-form-label">Full Name</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input type="text" id="usernamesu" name="usernamesu" class="form-control" autocomplete="off" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class=" offset-sm-1 col-sm-3">
+                                <label for="email" class=" col-form-label">Email Address</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input type="email" id="email" name="email" class="form-control" autocomplete="off" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class=" offset-sm-1 col-sm-3">
+                                <label for="tele" class="col-form-label">Contact number</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input type="tel" id="tele" name="tele" class="form-control" autocomplete="off" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class=" offset-sm-1 col-sm-3">
+                                <label for="pwdsu" class="col-form-label">Set New Password</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input type="password" id="pwdsu" name="pwdsu" class="form-control" autocomplete="off" required/>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class=" offset-sm-1 col-sm-3">
+                                <label for="pwdsu-re" class="col-form-label">Re-Enter Password</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input type="password" id="pwdsu-re" name="pwdsu-re" class="form-control" autocomplete="off" required/>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <div class="offset-sm-3 col-sm-6">
+                                <div class="row">
+                                    <div class="col-xs-4 ml-auto">
+                                        <button class="btn btn-md btn-success" type="submit" >SUBMIT</button>
+                                    </div>
+                                    &nbsp; &nbsp;
+                                    <div class="col-xs-4 mr-auto">
+                                        <button id="signCancel" class="btn btn-md btn-danger" type="reset" >CANCEL</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="para">
+                        <p>Already registered ? <a data-dismiss="modal" data-toggle="modal" href="#loginModal">Log in</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center center-div">
+            <div class="col-md-4 d-none d-md-block">
+                <div class="jumbotron jumbo1">
+                    <div class="container">
+                        <div class="row row-header">
+                            <div class="col-3">
+                                <h1><span class="fa fa-university"></span></h1>
+                            </div>
+                            <div class="col-9">
+                                <h4>Nagindas Khandwala College</h4>
+                                <p class="blockquote">An Autonomous Institute</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-md-12">
+                            <div class="row row-content justify-content-center">
+                                <img src="css/First_Flat_illustration copy.png" class="img-fuild" alt="Image" height="150px" width="200px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row d-sm-none justify-content-center">
+                    <div class="jumbotron jumbo2">
+                        <div class="jumbotron-body">
+                            <h4 class="jumbo-sm-text"><span class="fa fa-university mr-2"></span>Nagindas Khandwala College</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header cardhead">
+                        <h2 class="card-title text-white">
+                            </br>
+                            Hello there,
+                            </br>
+                            Welcome User
+                        </h2>
+                        <br>
+                        <h2>
+                            <span class="fa fa-user-circle-o fa-lg icon"></span>
+                        </h2>
+                    </div>
+                    <div class="card-body cardbodystyle">
+                        <form class="row">
+                            
+                            <div class="col-12">
+                                <br>
+                                <div class="form-group row justify-content-center">
+                                    <button type="button" class="col-8 btn btn-lg btn-style" name="login" id="loginButton"><b>Login</b></button>
+                                </div>
+                                <div class="form-group row justify-content-center">
+                                    <button type="button" class="col-8 btn btn-lg btn-style" name="signup" id="signButton"><b>Sign up</b></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer cardbodystyle">
+                        <p>Any Queries ?<a href="#" class="nav-link"><span class="fa fa-phone fa-lg mr-2"></span>Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#loginButton").click(function(){
+                $("#loginModal").modal('show')
+            });
+            $("#loginCancel").click(function(){
+                $("#loginModal").modal('hide')
+            });
+            $("#signButton").click(function(){
+                $("#signModal").modal('show')
+            });
+            $("#signCancel").click(function(){
+                $("#signModal").modal('hide')
+            });
+
+            $("#loginForm").submit(function(){
+                window.open('./verify.html','_blank')
+            });
+        });
+    </script>
+</body>
+
+</html>

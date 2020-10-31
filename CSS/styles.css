@@ -1,0 +1,177 @@
+.body-style {
+    background: linear-gradient(to bottom ,#c9fff3,#3fffd6, #00ac86);
+}
+
+.cardhead {
+    background-color:#03016e;
+    text-align: center;
+    
+}
+
+.cardbodystyle {
+    background-color: #ffae00;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-footer {
+    text-align: center;
+    color: #03016e;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.center-div {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.icon {
+    color:whitesmoke;
+    font-size: 80px;
+}
+
+.btn-style {
+    background-color:whitesmoke;
+    padding: 10px;
+    color: #03016e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    box-shadow: 2px 2px 4px rgb(36, 36, 36);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.modal-header {
+    background-color: #ffae00;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.jumbo1 {
+    background-color: white;
+    box-shadow: 4px 10px 16px rgb(36, 36, 36);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.jumbo2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+
+
+}
+
+.card {
+    box-shadow: 4px 10px 16px rgb(36, 36, 36);
+    border: none;
+}
+
+.para {
+    color: #03016e;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+#loginModal .form-control {
+    border-bottom: 4px #03016e solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+#signModal .form-control {
+    background-color:whitesmoke;
+    border: none;
+    outline: none;
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+label {
+    color: #03016e;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.head {
+    color: whitesmoke;
+    border-radius: 0 0 80px 80px;
+    background-color: #00ac86;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.veriBody {
+    background-color: whitesmoke;
+}
+
+
+
+.img1 {
+    margin: 20px;
+    filter: contrast(90%);
+}
+
+.img2 {
+    padding: 0px;
+    filter: contrast(0%);
+}
+
+.lbl-otp {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: #006eff;
+    letter-spacing: 2px;
+}
+
+
+.otpinput {
+    height: 50px;
+    border-bottom: 3px #006eff solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.btnTick {
+    border-radius: 70px;
+    background-color: #00ac86;
+    color: white;
+}
+
+.btnTick i {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/*
+substitute color combos
+#ffef13
+#ff132f
+#1352ff
+
+#84ffa1
+*/
